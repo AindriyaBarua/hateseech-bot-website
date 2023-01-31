@@ -95,7 +95,7 @@
 						<div class="row">
 							<div class="col-md-6">
 								<div id="userInput">
-									<input id="commentInput" type="text" placeholder="Enter Comment"/>
+									<input id="commentInput" type="text" name='msg' placeholder="Enter Comment"/>
 								</div>
 							</div>
 							
@@ -194,7 +194,20 @@
             document
             .getElementById("userInput")
             .scrollIntoView({ block: "start", behavior: "smooth" });
+            $.get("/get", { msg: rawText }).done(function(data) {  
+				var botHtml = '<p class="botText"><span><b>' + "Restrobot : " + '</b>' + data + "</span></p>";
+            $("#chatbox").append(botHtml);
+            document
+              .getElementById("userInput")
+              .scrollIntoView({ block: "start", behavior: "smooth" });
+          });
         }
+        $("#nameInput").keypress(function(e) {
+          if (e.which == 13) {
+            analyseComment()
+          }
+        });	      
+		
 
     </script>
 	</body>
