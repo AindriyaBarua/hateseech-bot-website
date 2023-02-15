@@ -65,9 +65,10 @@ def tokenize(sentence):
 
 
 def analyse(comment):
-    print(sent)
+    
     sent = preprocess_texts(comment)
     tokens = tokenize(sent)
+    print(sent)
     lemmatized_tokens = custom_lemmatize(tokens)
     sent = " ".join(lemmatized_tokens)
     response = []
