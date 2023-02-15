@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Ari &mdash; </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
-    <meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
-    <meta name="author" content="freehtml5.co" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
     <!-- Facebook and Twitter integration -->
     <meta property="og:title" content="" />
     <meta property="og:image" content="" />
@@ -67,7 +67,7 @@
                                 </li>
                                 <li><a href="about.html">About</a></li>
                                 <li class><a href="contact.html">Contact</a></li>
-                                <li class="btn-cta"><a href="#"><span>Login</span></a></li>
+                                <li class="btn-cta"><a href="#"><span>Donate</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -96,13 +96,22 @@
                             </div>
                         </div>
                         <div v-cloak v-if="response.length > 0">
-                            <p>The comment is detected to be {{hate_type}}</p> 
+                            <p>The comment is detected to be <b>{{hate_type}}</b></p> 
                             <p>These are the IPC laws violated by given comment:</p>
                             <ul>
                                 <li v-for="(item, index) in response" :key="index">
                                     {{ item }}
                                 </li>
                             </ul>
+                            <br>
+                            <h2>Legal Recourse</h2>
+                            <ul>
+                                <li><b>File a complaint on the National Cyber Crime Reporting Center:</b> <a href="https://cybercrime.gov.in" target="_blank">https://cybercrime.gov.in</a> This official portal allows for victims to file complaints online. Crimes against women andchildren can also be reported anonymously</li>
+                                <li><b>File an F.I.R physically at the cyber cell of any local police station:</b> Cyber complaintscan be filed at stations across India since cyber crimes do not fall under any specificjurisdiction. In case the police does not accept your complaint, you can refer thecomplaint to the Commissioner or Judicial Magistrate of the city.</li>
+                                <li><b>File a complaint to the National Commission of Women:</b> <a href="http://ncw.nic.in/front-page-icon/register-complaint"  target="_blank">http://ncw.nic.in/front-page-icon/register-complaint</a> </li>
+                                <li><b>File a complaint to the Adjudicating Officer under the ITA:</b> A complaint can be filedwith the the Adjudicating Officer of the State or Union Territory on the basis of location ofComputer System, Computer Network as defined in sub-Section 2 of Section 75 of ITAct on a plain paper on the Proforma together with the fee payable calculated on thebasis of damages claimed by way of compensation.</li>
+                            </ul>
+
                             
                         </div>
                         <p v-else>{{message}}</p>
@@ -180,29 +189,7 @@
     <script src="js/magnific-popup-options.js"></script>
     <!-- Main -->
     <script src="js/main.js"></script>
-    <script>
-    // function analyseComment() {
-    //     var rawText = $("#commentInput").val() 
-    //     var userHtml = '<p class="userText"><span><b>' + "Analysing Comment : " + '</b>' + rawText + "</span></p>";
-    //     $("#nameInput").val("");
-    //     $("#chatbox").append(userHtml);
-    //     document
-    //     .getElementById("userInput")
-    //     .scrollIntoView({ block: "start", behavior: "smooth" });
-    //     $.get("/get", { msg: rawText }).done(function(data) {  
-    //      var botHtml = '<p class="botText"><span><b>' + "Restrobot : " + '</b>' + data + "</span></p>";
-    //     $("#chatbox").append(botHtml);
-    //     document
-    //       .getElementById("userInput")
-    //       .scrollIntoView({ block: "start", behavior: "smooth" });
-    //   });
-    // }
-    // $("#nameInput").keypress(function(e) {
-    //   if (e.which == 13) {
-    //     analyseComment()
-    //   }
-    // });
-    </script>
+    
     <script>
     const { createApp } = Vue
 
