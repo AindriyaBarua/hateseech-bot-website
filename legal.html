@@ -79,6 +79,7 @@
                 <div class="row animate-box">
                     <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
                         <h2>Check if you can file a case</h2>
+                        <p>If you are receiving hate speech online, you are not helpless. There are laws in place to protect you. And often, just letting your abuser know that you are aware of your rights scares them away! You can enter the comment below and check if it is legally punishable.</p>
                     </div>
                 </div>
             </div>
@@ -207,7 +208,7 @@
         },
         methods: {
             async fetchData() {
-                const url = `http://127.0.0.1:5000/api/ipc-check?comment=${this.comment}`;
+                const url = `https://d04gbo4so2.execute-api.us-east-2.amazonaws.com/api/ipc-check?comment=${this.comment}`;
                 const response = await fetch(url);
                 const data = await response.json();
                 console.log(data)
