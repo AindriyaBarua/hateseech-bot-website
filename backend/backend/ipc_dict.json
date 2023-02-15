@@ -11,16 +11,12 @@
     },
     {"hate_type":"castiest", 
     "words":  ["chamaarr","chamar","chamari","chandaal","chandali","chmaar","gujar","gujra", "bhangi", "malech", "mlechcha", "kameena", "kameeni", "bhand", "bhimte", "bhimti"],
-    "ipc": ["Section 66A, Information Technology Act: Punishment for sending offensive messages through communication service, etc.","Section 504, IPC: Sexual harassment and punishment for sexual harassment","Section 500, IPC: Punishment for Defamation","Section 295A,IPC: Deliberate and malicious acts, intended to outrage religious feelings of any
-    class by insulting its religion or religious beliefs","Section 153A, IPC: Promoting enmity between different groups on grounds of religion, race,
-    place of birth, residence, language, etc., and doing acts prejudicial to maintenance of harmony","Section 505, IPC","Section 3(1)(x), SC/ST Act17: The Scheduled Castes and the Scheduled Tribes (Prevention of Atrocities) Act","Section 294, IPC: Obscene acts and songs"]
+    "ipc": ["Section 66A, Information Technology Act: Punishment for sending offensive messages through communication service, etc.","Section 504, IPC: Sexual harassment and punishment for sexual harassment","Section 500, IPC: Punishment for Defamation","Section 295A,IPC: Deliberate and malicious acts, intended to outrage religious feelings of any class by insulting its religion or religious beliefs","Section 153A, IPC: Promoting enmity between different groups on grounds of religion, race, place of birth, residence, language, etc., and doing acts prejudicial to maintenance of harmony","Section 505, IPC","Section 3(1)(x), SC/ST Act17: The Scheduled Castes and the Scheduled Tribes (Prevention of Atrocities) Act","Section 294, IPC: Obscene acts and songs"]
     
     },
     {"hate_type":"communal hate", 
     "words":  ["katua","katuwe","katwe","bulle","mulle","sulle","mulli","bulli", "sulli", "paxtani", "pakistani", "khalistani", "khalistan", "uncut", "ricebag", "ula oo akbar", "ulla oo akkkbar"],
-    "ipc": ["Section 66A, Information Technology Act: Punishment for sending offensive messages through communication service, etc.","Section 504, IPC: Sexual harassment and punishment for sexual harassment","Section 500, IPC: Punishment for Defamation","Section 295A,IPC: Deliberate and malicious acts, intended to outrage religious feelings of any
-    class by insulting its religion or religious beliefs","Section 153A, IPC: Promoting enmity between different groups on grounds of religion, race,
-    place of birth, residence, language, etc., and doing acts prejudicial to maintenance of harmony","Section 505, IPC","Section 3(1)(x), SC/ST Act17","Section 294, IPC: Obscence acts and songs"]
+    "ipc": ["Section 66A, Information Technology Act: Punishment for sending offensive messages through communication service, etc.","Section 504, IPC: Sexual harassment and punishment for sexual harassment","Section 500, IPC: Punishment for Defamation","Section 295A,IPC: Deliberate and malicious acts, intended to outrage religious feelings of any class by insulting its religion or religious beliefs","Section 153A, IPC: Promoting enmity between different groups on grounds of religion, race, place of birth, residence, language, etc., and doing acts prejudicial to maintenance of harmony","Section 505, IPC","Section 3(1)(x), SC/ST Act17","Section 294, IPC: Obscence acts and songs"]
     
     },
     {"hate_type":"queerphobic", 
