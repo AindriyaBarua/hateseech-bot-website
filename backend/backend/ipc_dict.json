@@ -26,12 +26,12 @@
     },
     {"hate_type":"violent", 
     "words":  ["marunga", "marungi", "marja", "marja", "laat", "ghoose"],
-    "ipc": ["Section 66A, Information Technology Act: Punishment for sending offensive messages through communication service, etc.","Section 503, IPC: Criminal Intimidation","Section 504, IPC: Intentional insult with intent to provoke breach of peace","Section 354A, IPC: Sexual harassment and punishment for sexual harassment-","Section 506, IPC: Punishment for Criminal Intimidation","Section 509, Indian Penal Code: Word, gesture or act intended to insult the modesty of a woman."]
+    "ipc": ["Section 66A, Information Technology Act: Punishment for sending offensive messages through communication service, etc.","Section 503, IPC: Criminal Intimidation","Section 504, IPC: Intentional insult with intent to provoke breach of peace","Section 354A, IPC: Sexual harassment and punishment for sexual harassment","Section 506, IPC: Punishment for Criminal Intimidation","Section 509, Indian Penal Code: Word, gesture or act intended to insult the modesty of a woman."]
     
     },
     {"hate_type":"doxing", 
     "words":  [],
-    "ipc": ["Section 503, IPC","Section 507, IPC","Section 66A, ITA","Section 66E9, ITA","Section 6710, ITA","Section 72A11, ITA","Section 354D12, IPC","Section 50013, IPC","Section 354C14, IPC"]
+    "ipc": ["Section 66E, ITA: Punishment for violation of privacy","Section 67, ITA: ","Section 66A, ITA: Punishment for publishing or transmitting obscene material in electronic form", "Section 72A, ITA, Punishment for disclosure of information in breach of lawful contract.", "Section 354D, IPC: Stalking"]
     
     }
 

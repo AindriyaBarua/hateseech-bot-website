@@ -71,7 +71,6 @@ def analyse(comment):
     print(sent)
     lemmatized_tokens = custom_lemmatize(tokens)
     sent = " ".join(lemmatized_tokens)
-    response = []
     words = sent.split()
     hate_type_list = []
     ipc_list = []
@@ -80,8 +79,15 @@ def analyse(comment):
             print(i['hate_type'], i['ipc'])
             hate_type_list.append(i['hate_type'])
             ipc_list= ipc_list + i['ipc']
+    
+    pattern_ph = r"^(\d{10}|\d{12})$"
+    match_ph = re.search(pattern_ph, sent)
+    if match_ph:
+       hate_type_list.append("doxxing")
+       ipc_list= ipc_list + ["Section 66E, ITA: Punishment for violation of privacy","Section 67, ITA: ","Section 66A, ITA: Punishment for publishing or transmitting obscene material in electronic form", "Section 72A, ITA, Punishment for disclosure of information in breach of lawful contract.", "Section 354D, IPC: Stalking"]
+
     hate_type = ", ".join(list(set(hate_type_list)))
     return {"hate_type":hate_type, "ipc":list(set(ipc_list))}
 
 
-analyse("Saale randi aukath")
+analyse("Saali randi chamar ki aulad")
