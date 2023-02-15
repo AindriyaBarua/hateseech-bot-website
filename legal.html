@@ -1,216 +1,236 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Ari &mdash; </title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
-	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
-	<meta name="author" content="freehtml5.co" />
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ari &mdash; </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+    <meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+    <meta name="author" content="freehtml5.co" />
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">    -->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="css/flexslider.css">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/legal.css">
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
 
-
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-
-	<!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">	 -->
-	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
-
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-
-	</head>
-	<body>
-		
-	<div class="fh5co-loader"></div>
-	
-	<div id="page">
-	<nav class="fh5co-nav" role="navigation">
-		<div class="top-menu">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href="index.html">Ari<span>.</span></a></div>
-					</div>
-					<div class="col-xs-10 text-right menu-1">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="portfolio.html">Tutorial</a></li>
-							<li class="has-dropdown">
-								<a href="blog.html">Resources</a>
-								<ul class="dropdown">
-									<li><a href="legal.html">Legal Resources</a></li>
-									<li><a href="technical.html">Technical Resources</a></li>
-									<li><a href="about.html">About</a></li>
-									<li><a href="contact.html">Contact</a></li>
-								</ul>
-							</li>
-							<li><a href="about.html">About</a></li>
-							<li class="active"><a href="contact.html">Contact</a></li>
-							<li class="btn-cta"><a href="#"><span>Login</span></a></li>
-						</ul>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</nav>
-
-	<div id="fh5co-contact">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Check if you can file a case</h2>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-				<div class="row">
-					
-					<div class="col-md-7 col-md-push-1 animate-box">
-						<div class="row">
-							<div class="col-md-6">
-								<div id="userInput">
-									<input id="commentInput" type="text" name='msg' placeholder="Enter Comment"/>
-								</div>
-							</div>
-							
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-	</div>
-	
-	<div id="fh5co-started">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>Ari is here to help</h2>
-						<p>Have any doubts? </p>
-						<p><a href="mailto:barua.aindriya@gmail.com" class="btn btn-default btn-lg">Check if you can</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<footer id="fh5co-footer" role="contentinfo">
-		<div class="container">
-			<div class="row row-pb-md">
-				<div class="col-md-4 fh5co-widget">
-					<h4>Ari</h4>
-					<p>Social media, made safe for all.</p>
-				</div>
-				<div class="col-md-2 col-md-push-1 fh5co-widget">
-					<h4>Links</h4>
-					<ul class="fh5co-footer-links">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="portfolio.html"></a>Tutorial</li>
-						<li><a href="blog.html">Resources</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</div>
-
-				
-
-				
-
-			</div>
-
-			<div class="row copyright">
-				<div class="col-md-12 text-center">
-					<p>
-						<small class="block">Designed by <a href="" target="_blank">Aindriya Barua</a> 
-					</p>
-					<p>
-						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul>
-					</p>
-				</div>
-			</div>
-
-		</div>
-	</footer>
-	</div>
-
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
-	</div>
-	
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
-	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
-	<!-- Main -->
-	<script src="js/main.js"></script>
+<body>
+    <div class="fh5co-loader"></div>
+    <div id="page">
+        <nav class="fh5co-nav" role="navigation">
+            <div class="top-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <div id="fh5co-logo"><a href="index.html">Ari<span>.</span></a></div>
+                        </div>
+                        <div class="col-xs-10 text-right menu-1">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="portfolio.html">Tutorial</a></li>
+                                <li class="has-dropdown">
+                                    <a href="blog.html">Resources</a>
+                                    <ul class="dropdown">
+                                        <li><a href="legal.html">Legal Resources</a></li>
+                                        <li><a href="technical.html">Technical Resources</a></li>
+                                        <li><a href="mentalhealth.html">Mental Health Resources</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="about.html">About</a></li>
+                                <li class><a href="contact.html">Contact</a></li>
+                                <li class="btn-cta"><a href="#"><span>Login</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="fh5co-contact">
+            <div class="container">
+                <div class="row animate-box">
+                    <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                        <h2>Check if you can file a case</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div id="app">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <textarea v-model="comment" name="" class="form-control" id="" cols="30" rows="7" placeholder="Comment"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input @click="fetchData" type="submit" value="Submit Comment" class="btn btn-primary">
+                            </div>
+                        </div>
+                        <div v-cloak v-if="response.length > 0">
+                            <p>The comment is detected to be {{hate_type}}</p> 
+                            <p>These are the IPC laws violated by given comment:</p>
+                            <ul>
+                                <li v-for="(item, index) in response" :key="index">
+                                    {{ item }}
+                                </li>
+                            </ul>
+                            
+                        </div>
+                        <p v-else>{{message}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="fh5co-started">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row animate-box">
+                <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                    <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                        <h2>Ari is here to help</h2>
+                        <p>Have any doubts? </p>
+                        <p><a href="mailto:barua.aindriya@gmail.com" class="btn btn-default btn-lg">Mail us</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="fh5co-footer" role="contentinfo">
+        <div class="container">
+            <div class="row row-pb-md">
+                <div class="col-md-4 fh5co-widget">
+                    <h4>Ari</h4>
+                    <p>Social media, made safe for all.</p>
+                </div>
+                <div class="col-md-2 col-md-push-1 fh5co-widget">
+                    <h4>Links</h4>
+                    <ul class="fh5co-footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html"></a>Tutorial</li>
+                        <li><a href="blog.html">Resources</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row copyright">
+                <div class="col-md-12 text-center">
+                    <p>
+                        <small class="block">Designed by <a href="" target="_blank">Aindriya Barua</a>
+                    </p>
+                    <p>
+                        <ul class="fh5co-social-icons">
+                            <li><a href="#"><i class="icon-twitter"></i></a></li>
+                            <li><a href="#"><i class="icon-facebook"></i></a></li>
+                            <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                            <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+    </div>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Flexslider -->
+    <script src="js/jquery.flexslider-min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
+    <!-- Main -->
+    <script src="js/main.js"></script>
     <script>
-        function analyseComment() {
-            var rawText = $("#commentInput").val() 
-            var userHtml = '<p class="userText"><span><b>' + "Analysing Comment : " + '</b>' + rawText + "</span></p>";
-            $("#nameInput").val("");
-            $("#chatbox").append(userHtml);
-            document
-            .getElementById("userInput")
-            .scrollIntoView({ block: "start", behavior: "smooth" });
-            $.get("/get", { msg: rawText }).done(function(data) {  
-				var botHtml = '<p class="botText"><span><b>' + "Restrobot : " + '</b>' + data + "</span></p>";
-            $("#chatbox").append(botHtml);
-            document
-              .getElementById("userInput")
-              .scrollIntoView({ block: "start", behavior: "smooth" });
-          });
-        }
-        $("#nameInput").keypress(function(e) {
-          if (e.which == 13) {
-            analyseComment()
-          }
-        });	      
-		
-
+    // function analyseComment() {
+    //     var rawText = $("#commentInput").val() 
+    //     var userHtml = '<p class="userText"><span><b>' + "Analysing Comment : " + '</b>' + rawText + "</span></p>";
+    //     $("#nameInput").val("");
+    //     $("#chatbox").append(userHtml);
+    //     document
+    //     .getElementById("userInput")
+    //     .scrollIntoView({ block: "start", behavior: "smooth" });
+    //     $.get("/get", { msg: rawText }).done(function(data) {  
+    //      var botHtml = '<p class="botText"><span><b>' + "Restrobot : " + '</b>' + data + "</span></p>";
+    //     $("#chatbox").append(botHtml);
+    //     document
+    //       .getElementById("userInput")
+    //       .scrollIntoView({ block: "start", behavior: "smooth" });
+    //   });
+    // }
+    // $("#nameInput").keypress(function(e) {
+    //   if (e.which == 13) {
+    //     analyseComment()
+    //   }
+    // });
     </script>
-	</body>
+    <script>
+    const { createApp } = Vue
+
+    createApp({
+        data() {
+            return {
+                message: '',
+                comment: '',
+                response: [],
+                hate_type: ""
+
+            }
+
+
+        },
+        methods: {
+            async fetchData() {
+                const url = `http://127.0.0.1:5000/api/ipc-check?comment=${this.comment}`;
+                const response = await fetch(url);
+                const data = await response.json();
+                console.log(data)
+				this.hate_type = data.hate_type;
+                this.response = data.ipc;
+                this.message = "The comment may not be legally punishable but if the comment still bothers you, please check the technical and mental health resources to know what else you could do about it."
+            }
+        }
+    }).mount('#app')
+    </script>
+</body>
+
 </html>
-
-

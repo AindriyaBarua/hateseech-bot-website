@@ -1,0 +1,10 @@
+.user-input{
+	display: flex;
+	justify-content: center;
+	
+}
+.chk-btn{
+	margin-left: 1.2rem;
+
+}
+[v-cloak] { display: none; }

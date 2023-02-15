@@ -8,50 +8,36 @@ with open(filename, 'r', encoding='utf8') as f:
 
   data = json.load(f)
   for i in data['data']:
-    #print(i)
     pass
 
 def get_comment(comment):
+    print(comment)
     ipc = analyse(comment)
     return ipc
 
 
 def preprocess_texts(sent):
-    print("1", sent)
     sent = sent.strip()
     sent = sent.lower()
-    print("2", sent)
     sent = re.sub('^@[0-9a-z_\.]+','',sent) # username 
-    # print("3",sent)
     sent = re.sub(' @[0-9a-z_\.]+','',sent)
-    # print("3.1",sent)
     sent = re.sub( r'\\x[0-9a-z][0-9a-z]*', ' ', sent) # remove \x09    
-    # print("4",sent)
     sent = re.sub(r"http\S+", "", sent)
-    # print("5",sent)
     # not removing hash, star, exclamation from mid of word
     sent = re.sub(r"[,;\(\)\\.:\-_/|](!$)*", " ", sent)
-    # print("6",sent)
     sent = sent.replace('"', ' ')
-    # print("7",sent)
     sent = sent.replace("'", ' ')
-    # print("8",sent)
     
     emojis = emoji.emoji_list(sent)
-    # print("8",emojis)
 
     if len(emojis)>0:
-      # print(sent)
       for item in emojis:
         for emo in item['emoji']:
           sent = re.sub(emo, " " + emo + " " , sent)
-        # print(sent)
     
     sent = re.sub('\n', ' ', sent)
-    # print# ("9",sent)
     sent = re.sub(' +', ' ', sent)
     sent = sent.strip()
-    # print("10",sent)
     return sent
 
 
@@ -79,16 +65,22 @@ def tokenize(sentence):
 
 
 def analyse(comment):
+    print(sent)
     sent = preprocess_texts(comment)
     tokens = tokenize(sent)
     lemmatized_tokens = custom_lemmatize(tokens)
     sent = " ".join(lemmatized_tokens)
-    print(sent)
+    response = []
     words = sent.split()
+    hate_type_list = []
+    ipc_list = []
     for i in data['data']:
         if [j for j in words if j in i['words']]:
-            print(i['ipc'])
-        
+            print(i['hate_type'], i['ipc'])
+            hate_type_list.append(i['hate_type'])
+            ipc_list= ipc_list + i['ipc']
+    hate_type = ", ".join(list(set(hate_type_list)))
+    return {"hate_type":hate_type, "ipc":list(set(ipc_list))}
 
 
-analyse("Meetha sala")
+analyse("Saale randi aukath")
