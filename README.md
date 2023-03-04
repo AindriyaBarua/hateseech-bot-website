@@ -1,4 +1,5 @@
 # hateseech-bot-website
+WIP: Website for Shor.ai, done during Without Fear Fellowship: The Bachchao Project
 
 Hosted here: https://AindriyaBarua.github.io/hateseech-bot-website
 
