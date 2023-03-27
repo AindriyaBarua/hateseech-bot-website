@@ -3,6 +3,7 @@ from flask_cors import CORS
 
 import comment_analyser
 
+# flask app creation
 app = Flask(__name__)
 
 cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
@@ -11,7 +12,7 @@ cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 def index():
     return "Hello World"
 
-
+# api end point ipc-check, takes comment, sends it to coment_analyzer and gets response
 @app.route('/api/ipc-check')
 def get_bot_response():
     message = request.args.get('comment')
